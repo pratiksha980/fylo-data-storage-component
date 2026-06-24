@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Raleway", sans-serif;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="min-h-screen flex flex-col items-center justify-center md:justify-start pt-0 md:pt-48 bg-[hsl(229,57%,11%)] bg-[url('./images/bg-mobile.png')] bg-repeat-y bg-cover md:bg-[url(./images/bg-desktop.png)] md:bg-no-repeat md:bg-bottom md:bg-contain"
+  >
+    <main
+      class="w-full max-w-[1440px] flex flex-col items-center justify-center md:flex-row md:items-end gap-8 md:gap-10 p-5 md:p-8"
+    >
+      <article
+        class="w-full max-w-[400px] h-auto flex flex-col gap-6 md:gap-10 p-12 bg-[hsl(228,56%,26%)] rounded-tr-[100px] rounded-tl-xl rounded-bl-xl rounded-br-xl"
+      >
+        <div>
+          <img
+            class="w-[135px] h-auto"
+            src="./images/logo.svg"
+            alt="fylo logo"
+          />
+        </div>
+        <div class="flex gap-3 md:gap-6">
+          <div
+            class="w-12 h-12 flex justify-center items-center bg-[hsl(229,57%,11%)] rounded-lg"
+          >
+            <img
+              src="./images/icon-document.svg"
+              alt="document icon"
+              class="w-5 h-5 object-contain"
+            />
+          </div>
+          <div
+            class="w-12 h-12 flex justify-center items-center bg-[hsl(229,57%,11%)] rounded-lg"
+          >
+            <img
+              src="./images/icon-folder.svg"
+              alt="folder icon"
+              class="w-5 h-5 object-contain"
+            />
+          </div>
+          <div
+            class="w-12 h-12 flex justify-center items-center bg-[hsl(229,57%,11%)] rounded-lg"
+          >
+            <img
+              src="./images/icon-upload.svg"
+              alt="upload icon"
+              class="w-5 h-5 object-contain"
+            />
+          </div>
+        </div>
+      </article>
+
+      <article
+        class="relative w-full max-w-[400px] md:max-w-[600px] flex flex-col gap-5 md:gap-6 p-10 bg-[hsl(228,56%,26%)] rounded-xl"
+      >
+        <h1 class="text-[hsl(245,51%,70%)] text-sm font-normal">
+          You’ve used
+          <span class="text-[hsl(243,100%,93%)] font-bold">815 GB</span> of your
+          storage
+        </h1>
+
+        <div class="w-full p-1 bg-[hsl(229,57%,11%)] rounded-full">
+          <div
+            class="w-3/4 h-3 flex justify-end items-center p-1 bg-gradient-to-r from-[hsl(6,100%,80%)] to-[hsl(335,100%,65%)] rounded-full"
+          >
+            <div class="w-2 h-2 bg-white rounded-full"></div>
+          </div>
+        </div>
+
+        <div class="flex justify-between text-[hsl(243,100%,93%)]">
+          <span class="text-sm font-bold">0 GB</span>
+          <span class="text-sm font-bold">1000 GB</span>
+        </div>
+
+        <div
+          class="absolute -bottom-14 left-1/2 -translate-x-1/2 md:bottom-auto md:top-[-55px] md:right-6 md:left-auto md:translate-x-0 z-10 max-w-[260px] flex items-center gap-2 px-4 py-6 bg-white rounded-xl md:rounded-br-none shadow-xl md:after:content-[''] md:after:absolute md:after:right-0 md:after:-bottom-3 md:after:w-0 md:after:h-0 md:after:border-t-[16px] md:after:border-t-white md:after:border-l-[16px] md:after:border-l-transparent"
+        >
+          <span class="text-4xl font-bold text-black">185</span>
+          <span
+            class="text-[hsl(229,7%,55%)] text-sm font-normal tracking-wide mt-1"
+          >
+            GB LEFT
+          </span>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
